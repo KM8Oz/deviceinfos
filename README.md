@@ -1,4 +1,7 @@
 # deviceinfos
+
+> install : ``` yarn add deviceinfos ```
+
 ```native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]```
  
 ```
