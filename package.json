@@ -2,16 +2,19 @@
     "name": "deviceinfos",
     "version": "0.0.3",
     "main": "index.js",
-    "types": "index.d.ts",
     "repository": "git@github.com:KM8Oz/deviceinfos.git",
     "description": "native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]",
+    "types": "index.d.ts",
     "napi": {
         "name": "deviceinfos",
         "triples": {
+            "defaults": false,
             "additional": [
                 "aarch64-apple-darwin",
                 "aarch64-linux-android",
                 "aarch64-pc-windows-msvc",
+                "x86_64-apple-darwin",
+                "x86_64-pc-windows-msvc",
                 "i686-pc-windows-msvc",
                 "armv7-linux-androideabi"
             ]
@@ -32,15 +35,5 @@
         "prepublishOnly": "napi prepublish -t npm",
         "test": "ava",
         "version": "napi version"
-    },
-    "optionalDependencies": {
-        "deviceinfos-win32-x64-msvc": "0.0.3",
-        "deviceinfos-darwin-x64": "0.0.3",
-        "deviceinfos-linux-x64-gnu": "0.0.3",
-        "deviceinfos-darwin-arm64": "0.0.3",
-        "deviceinfos-android-arm64": "0.0.3",
-        "deviceinfos-win32-arm64-msvc": "0.0.3",
-        "deviceinfos-win32-ia32-msvc": "0.0.3",
-        "deviceinfos-android-arm-eabi": "0.0.3"
     }
 }
