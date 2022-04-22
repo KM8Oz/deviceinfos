@@ -1,22 +1,19 @@
 import test from 'ava'
 
-import { realname, username, lang, devicename, hostname, distro, desktopEnv } from '../index.js'
+import { realname, username, lang, devicename, hostname, distro, desktopEnv, machineid } from '../index.js'
 
 test('realname from native', (t) => {
     if (realname()) {
-        console.log(realname());
         t.pass()
     }
 })
 test('username from native', (t) => {
     if (username()) {
-        console.log(username());
         t.pass()
     }
 })
 test('lang from native', (t) => {
     if (lang()) {
-        console.log(lang());
         t.pass()
     }
 })
@@ -37,6 +34,12 @@ test('distro from native', (t) => {
 })
 test('desktopEnv from native', (t) => {
     if (desktopEnv()) {
+        t.pass()
+    }
+})
+
+test('machineid from native', (t) => {
+    if (machineid()) {
         t.pass()
     }
 })

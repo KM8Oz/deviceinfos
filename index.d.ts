@@ -10,3 +10,4 @@ export function devicename(): string
 export function hostname(): string
 export function distro(): string
 export function desktopEnv(): string
+export function machineid(): string

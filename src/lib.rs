@@ -2,6 +2,7 @@
 #[macro_use]
 extern crate napi_derive;
 extern crate whoami;
+extern crate machine_uid;
 
 #[napi]
 fn realname() -> String { 
@@ -37,4 +38,9 @@ fn distro() -> String {
 #[napi]
 fn desktop_env() -> String { 
   return whoami::desktop_env().to_string();
+}
+
+#[napi]
+fn machineid() -> String { 
+  return machine_uid::get().unwrap();
 }

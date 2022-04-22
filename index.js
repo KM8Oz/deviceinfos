@@ -236,7 +236,7 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { realname, username, lang, devicename, hostname, distro, desktopEnv } = nativeBinding
+const { realname, username, lang, devicename, hostname, distro, desktopEnv, machineid } = nativeBinding
 
 module.exports.realname = realname
 module.exports.username = username
@@ -245,3 +245,4 @@ module.exports.devicename = devicename
 module.exports.hostname = hostname
 module.exports.distro = distro
 module.exports.desktopEnv = desktopEnv
+module.exports.machineid = machineid
