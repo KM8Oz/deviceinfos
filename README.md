@@ -2,7 +2,7 @@
 
 > install : ``` yarn add deviceinfos ```
 
-```native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]```
+```native node module that provide devices infos in different archs[arm7|64/x64]/platforms[darwin/windows]```
  
 ```
 import test from 'ava'
@@ -43,5 +43,9 @@ test('desktopEnv from native', (t) => {
     t.pass()
   }
 })
-
+test('machineid from native', (t) => {
+    if (machineid()) {
+        t.pass()
+    }
+})
 ```
