@@ -2,7 +2,7 @@
 
 > install : ``` yarn add deviceinfos ```
 
-```native node module that provide devices infos in different archs[arm7|64/x64]/platforms[darwin/windows]```
+```native node module that provide device infos in different archs[arm7|64/x64]/platforms[darwin/windows]```
  
 ```
 import test from 'ava'
@@ -64,3 +64,5 @@ test('macAddressByName from native', (t) => {
 
 
 ```
+
+<img width="756" alt="Screen Shot 2022-04-23 at 2 51 33 AM" src="https://user-images.githubusercontent.com/5567515/164827512-16f06af5-d5cc-42ba-b1c1-55517e0e152a.png">
