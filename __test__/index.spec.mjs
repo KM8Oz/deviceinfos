@@ -1,6 +1,6 @@
 import test from 'ava'
 
-import { realname, username, lang, devicename, hostname, distro, desktopEnv, machineid } from '../index.js'
+import { realname, username, lang, devicename, hostname, distro, desktopEnv, machineid, activeMacAddress, macAddressByName } from '../index.js'
 
 test('realname from native', (t) => {
     if (realname()) {
@@ -40,6 +40,19 @@ test('desktopEnv from native', (t) => {
 
 test('machineid from native', (t) => {
     if (machineid()) {
+        t.pass()
+    }
+})
+
+test('activeMacAddress from native', (t) => {
+    if (activeMacAddress()) {
+        t.pass()
+    }
+})
+
+test('macAddressByName from native', (t) => {
+    console.log(macAddressByName("lo"));
+    if (macAddressByName("bridge0")) {
         t.pass()
     }
 })

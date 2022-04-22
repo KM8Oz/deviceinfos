@@ -11,3 +11,5 @@ export function hostname(): string
 export function distro(): string
 export function desktopEnv(): string
 export function machineid(): string
+export function activeMacAddress(): string
+export function macAddressByName(s: string): string

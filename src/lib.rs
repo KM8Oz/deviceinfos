@@ -1,9 +1,13 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
 #![deny(clippy::all)]
 #[macro_use]
 extern crate napi_derive;
 extern crate whoami;
 extern crate machine_uid;
-
+extern crate mac_address;
+// use napi::bindgen_prelude::*;
 #[napi]
 fn realname() -> String { 
   return whoami::realname();
@@ -43,4 +47,21 @@ fn desktop_env() -> String {
 #[napi]
 fn machineid() -> String { 
   return machine_uid::get().unwrap();
+}
+
+#[napi]
+fn active_mac_address() -> String { 
+  return match mac_address::get_mac_address().unwrap().as_mut() {
+    Some(v) => v.clone().to_string(),
+    None => "no mac address found!".to_string(),
+   };
+}
+
+#[napi]
+fn mac_address_by_name(s:String) -> String { 
+  let name: &str = &s[..];
+  return match mac_address::mac_address_by_name(name).unwrap().as_mut() {
+    Some(v) => v.clone().to_string(),
+    None => "no mac address found!".to_string(),
+   };
 }
