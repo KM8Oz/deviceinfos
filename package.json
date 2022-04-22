@@ -35,14 +35,5 @@
         "prepublishOnly": "napi prepublish -t npm",
         "test": "ava",
         "version": "napi version"
-    },
-    "optionalDependencies": {
-        "deviceinfos-darwin-arm64": "0.0.2",
-        "deviceinfos-android-arm64": "0.0.2",
-        "deviceinfos-win32-arm64-msvc": "0.0.2",
-        "deviceinfos-darwin-x64": "0.0.2",
-        "deviceinfos-win32-x64-msvc": "0.0.2",
-        "deviceinfos-win32-ia32-msvc": "0.0.2",
-        "deviceinfos-android-arm-eabi": "0.0.2"
     }
 }
