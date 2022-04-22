@@ -1,36 +1,36 @@
 {
-  "name": "deviceinfos",
-  "version": "0.0.1",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "repository": "git@github.com:KM8Oz/deviceinfos.git",
-  "description": "native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]",
-  "napi": {
     "name": "deviceinfos",
-    "triples": {
-      "additional": [
-        "aarch64-apple-darwin",
-        "aarch64-linux-android",
-        "aarch64-pc-windows-msvc",
-        "i686-pc-windows-msvc",
-        "armv7-linux-androideabi"
-      ]
+    "version": "0.0.2",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "repository": "git@github.com:KM8Oz/deviceinfos.git",
+    "description": "native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]",
+    "napi": {
+        "name": "deviceinfos",
+        "triples": {
+            "additional": [
+                "aarch64-apple-darwin",
+                "aarch64-linux-android",
+                "aarch64-pc-windows-msvc",
+                "i686-pc-windows-msvc",
+                "armv7-linux-androideabi"
+            ]
+        }
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@napi-rs/cli": "^2.6.2",
+        "ava": "^4.0.1"
+    },
+    "engines": {
+        "node": ">= 10"
+    },
+    "scripts": {
+        "artifacts": "napi artifacts",
+        "build": "napi build --platform --release",
+        "build:debug": "napi build --platform",
+        "prepublishOnly": "napi prepublish -t npm",
+        "test": "ava",
+        "version": "napi version"
     }
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@napi-rs/cli": "^2.6.2",
-    "ava": "^4.0.1"
-  },
-  "engines": {
-    "node": ">= 10"
-  },
-  "scripts": {
-    "artifacts": "napi artifacts",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
-    "version": "napi version"
-  }
 }
