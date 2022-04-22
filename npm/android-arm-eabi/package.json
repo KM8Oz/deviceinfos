@@ -1,6 +1,6 @@
 {
-  "name": "deviceinfos-android-arm-eabi",
-  "version": "0.0.0",
+  "name": "-android-arm-eabi",
+  "version": "0.0.3",
   "os": [
     "android"
   ],
@@ -11,8 +11,10 @@
   "files": [
     "deviceinfos.android-arm-eabi.node"
   ],
+  "description": "native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "git@github.com:KM8Oz/deviceinfos.git"
 }

@@ -1,20 +1,23 @@
 {
-  "name": "-darwin-x64",
+  "name": "-linux-x64-gnu",
   "version": "0.0.3",
   "os": [
-    "darwin"
+    "linux"
   ],
   "cpu": [
     "x64"
   ],
-  "main": "deviceinfos.darwin-x64.node",
+  "main": "deviceinfos.linux-x64-gnu.node",
   "files": [
-    "deviceinfos.darwin-x64.node"
+    "deviceinfos.linux-x64-gnu.node"
   ],
   "description": "native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
   },
-  "repository": "git@github.com:KM8Oz/deviceinfos.git"
+  "repository": "git@github.com:KM8Oz/deviceinfos.git",
+  "libc": [
+    "glibc"
+  ]
 }

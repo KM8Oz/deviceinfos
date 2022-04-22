@@ -1,3 +1,3 @@
-# `deviceinfos-darwin-arm64`
+# `-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `deviceinfos`
+This is the **aarch64-apple-darwin** binary for ``
