@@ -10,6 +10,7 @@ pids
 *.pid
 *.seed
 *.pid.lock
+*.lock
 # Optional npm cache directory
 .npm
 # Optional eslint cache
