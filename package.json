@@ -1,37 +1,36 @@
 {
-  "name": "deviceinfos",
-  "version": "0.0.3",
-  "main": "index.js",
-  "repository": "git@github.com:KM8Oz/deviceinfos.git",
-  "description": "native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]",
-  "types": "index.d.ts",
-  "napi": {
     "name": "deviceinfos",
-    "triples": {
-      "defaults": false,
-      "additional": [
-        "aarch64-apple-darwin",
-        "aarch64-pc-windows-msvc",
-        "x86_64-apple-darwin",
-        "x86_64-pc-windows-msvc",
-        "i686-pc-windows-msvc"
-      ]
+    "version": "0.0.3",
+    "main": "index.js",
+    "repository": "git@github.com:KM8Oz/deviceinfos.git",
+    "description": "native node module that provide devices infos in different archs[arm7|64/x64]/platforms[android/darwin/windows/linux]",
+    "types": "index.d.ts",
+    "napi": {
+        "name": "deviceinfos",
+        "triples": {
+            "defaults": false,
+            "additional": [
+                "aarch64-apple-darwin",
+                "aarch64-pc-windows-msvc",
+                "x86_64-apple-darwin",
+                "x86_64-pc-windows-msvc"
+            ]
+        }
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@napi-rs/cli": "^2.6.2",
+        "ava": "^4.0.1"
+    },
+    "engines": {
+        "node": ">= 10"
+    },
+    "scripts": {
+        "artifacts": "napi artifacts",
+        "build": "napi build --platform --release",
+        "build:debug": "napi build --platform",
+        "prepublishOnly": "napi prepublish -t npm",
+        "test": "ava",
+        "version": "napi version"
     }
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@napi-rs/cli": "^2.6.2",
-    "ava": "^4.0.1"
-  },
-  "engines": {
-    "node": ">= 10"
-  },
-  "scripts": {
-    "artifacts": "napi artifacts",
-    "build": "napi build --platform --release",
-    "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
-    "version": "napi version"
-  }
 }

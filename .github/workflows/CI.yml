@@ -33,12 +33,12 @@ jobs:
             build: yarn build
             target: x86_64-pc-windows-msvc
             architecture: x64
-          - host: windows-latest
-            build: |
-              yarn build --target i686-pc-windows-msvc
-              yarn test
-            target: i686-pc-windows-msvc
-            architecture: x86
+          # - host: windows-latest
+          #   build: |
+          #     yarn build --target i686-pc-windows-msvc
+          #     yarn test
+          #   target: i686-pc-windows-msvc
+          #   architecture: x86
           - host: macos-latest
             target: aarch64-apple-darwin
             build: |
