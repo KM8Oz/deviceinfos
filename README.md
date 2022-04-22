@@ -48,4 +48,19 @@ test('machineid from native', (t) => {
         t.pass()
     }
 })
+
+test('activeMacAddress from native', (t) => {
+    if (activeMacAddress()) {
+        t.pass()
+    }
+})
+
+test('macAddressByName from native', (t) => {
+    console.log(macAddressByName("lo"));
+    if (macAddressByName("bridge0")) {
+        t.pass()
+    }
+})
+
+
 ```
