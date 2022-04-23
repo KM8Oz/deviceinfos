@@ -1,4 +1,4 @@
-# deviceinfos
+# deviceinfos : ![GitHub](https://img.shields.io/github/license/KM8Oz/deviceinfos?style=plastic)
 
 > install : ``` yarn add deviceinfos ```
 
