@@ -1,4 +1,4 @@
-# deviceinfos : ![GitHub](https://img.shields.io/github/license/KM8Oz/deviceinfos?style=plastic) ![npms.io (quality)](https://img.shields.io/npms-io/quality-score/deviceinfos) ![npm](https://img.shields.io/npm/dw/deviceinfos?style=plastic) ![npm bundle size](https://img.shields.io/bundlephobia/min/deviceinfos)
+# deviceinfos : ![GitHub](https://img.shields.io/github/license/KM8Oz/deviceinfos?style=plastic) ![npms.io (quality)](https://img.shields.io/npms-io/quality-score/deviceinfos?style=plastic) ![npm](https://img.shields.io/npm/dw/deviceinfos?style=plastic) ![npm bundle size](https://img.shields.io/bundlephobia/min/deviceinfos?style=plastic)
 
 > install : ``` yarn add deviceinfos ```
 
